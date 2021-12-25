@@ -21,6 +21,24 @@
 
 # Step- 3
 
-**Explaination:** After step- 2 paste the invoice image link in Invoice Image Link section. In left hand section it will show you JSON file which will helful for you if invoice image is not clear or we can use it for to solve customer problem like difficulty to find date, time, shop ID and on right section it will load image which will helful to verify whether its correct image or not.
+**Explaination:** After step- 2 paste the invoice image link in Invoice Image Link section then click on Analyze Image button. It will generate two section for you first is in left hand section it will show you *JSON file* which will helful for you if invoice image is not clear or we can use it for to solve customer problem like difficulty to find date, time, shop ID and second section is on right side it will load image for you which will helful to verify whether its correct image or not.
 
 ![](Step-%203.png)
+
+# Technology
+
+- Microsoft Azure
+- Optical Character Recognition
+- Azure Static WebApp Service 
+- Visual Studio Code
+- GitHub
+- Azure Cognitive Services
+- Azure Storage
+- Canva (To edit screenshot)
+- Text Analytics
+- Image Analysis
+
+# Reference
+- Future Ready Talent Website (Internship Project)
+- Microsoft Learn and Official Documentation
+- GitHub Documentation
