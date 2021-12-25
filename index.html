@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Invoice Extractor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  </head>
+  <body>
+  <script type="text/javascript">
+    function processmyImage() {
+    let subscriptionKey = document.getElementById("key").value;
+    let endpoint = document.getElementById("endpoint").value;
+    if (!subscriptionKey) {
+        throw new Error("Please enter your subscription key and endpoint.");
+    }
+    var uriBase =
+        "https://cv-ci-myvision.cognitiveservices.azure.com//vision/v3.1/read/analyze";
+    var sourceImageUrl = document.getElementById("inputImage").value;
+    document.querySelector("#sourceImage").src = sourceImageUrl;
+    $.ajax({
+        url: uriBase,
+        beforeSend: function (jqXHR) {
+            jqXHR.setRequestHeader("Content-Type", "application/json");
+            jqXHR.setRequestHeader(
+                "Ocp-Apim-Subscription-Key",
+                subscriptionKey
+            );
+        },
+        type: "POST",
+        data: JSON.stringify({ url: sourceImageUrl }),
+    })
+        .done(function (data, textStatus, jqXHR) {
+            $("#responseTextArea").val(
+                "Text submitted. " +
+                "Waiting 10 seconds to retrieve the recognized text."
+            );
+            setTimeout(function () {
+                var operationLocation =
+                    jqXHR.getResponseHeader("Operation-Location");
+                $.ajax({
+                    url: operationLocation,
+                    beforeSend: function (jqXHR) {
+                        jqXHR.setRequestHeader("Content-Type", "application/json");
+                        jqXHR.setRequestHeader(
+                            "Ocp-Apim-Subscription-Key",
+                            subscriptionKey
+                        );
+                    },
+
+                    type: "GET",
+                })
+                    .done(function (data) {
+                        
+                        $("#responseTextArea").val(JSON.stringify(data, null, 2));
+                    })
+
+                    .fail(function (jqXHR, textStatus, errorThrown) {
+                        
+                        var errorString =
+                            errorThrown === ""
+                                ? "Error. "
+                                : errorThrown + " (" + jqXHR.status + "): ";
+                        errorString +=
+                            jqXHR.responseText === ""
+                                ? ""
+                                : jQuery.parseJSON(jqXHR.responseText).message
+                                    ? jQuery.parseJSON(jqXHR.responseText).message
+                                    : jQuery.parseJSON(jqXHR.responseText).error.message;
+                        alert(errorString);
+                    });
+            }, 10000);
+        })
+
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            
+            $("#responseTextArea").val(JSON.stringify(jqXHR, null, 2));
+
+          
+            var errorString =
+                errorThrown === ""
+                    ? "Error. "
+                    : errorThrown + " (" + jqXHR.status + "): ";
+            errorString +=
+                jqXHR.responseText === ""
+                    ? ""
+                    : jQuery.parseJSON(jqXHR.responseText).message
+                        ? jQuery.parseJSON(jqXHR.responseText).message
+                        : jQuery.parseJSON(jqXHR.responseText).error.message;
+            alert(errorString);
+        });
+};
+</script>
+   <div class="heading-1">
+      <h1><b>Invoice Information Extractor</b></h1>
+  </div>
+  <div class="background-color">
+  <div class="subscription-key", style="width:50%; float: left;">
+      <b>Subscription Key:</b>
+     
+     <input type="text" name="key" id="key" value="7039d7c3847c401593cb39c44a25cd41" style="width: 400px" />
+     <br /><br />
+     </div>
+
+    <div class="endpoint",style="width:50%;float:right";>
+    <b>Endpoint:</b>
+    <input
+      type="text"
+      name="endpoint"
+      id="endpoint"
+      value="https://cv-ci-myvision.cognitiveservices.azure.com/"
+      style="width: 400px"
+    />
+    <br></br>
+    </div>
+    <div class="image-link">
+    <b>Invoice Image Link:</b>
+    <input type="text" name="inputImage" id="inputImage" value="" />
+    <button onclick="processmyImage()"><b>Analyze Image</b></button>
+    </div>
+    <br /><br />
+    <div id="wrapper" style="width: 1020px; display: table">
+      <div id="jsonOutput" style="width: 700px; display: table-cell">
+        <div class="JSON-file"> 
+        <b>Extrcted Information:</b>
+        </div>
+        <br /><br />
+        <textarea
+          id="responseTextArea"
+          class="UIInput"
+          style="width: 680px; height: 400px"
+        ></textarea>
+      </div>
+      <div id="imageDiv" style="width: 420px; display: table-cell">
+        <div class="invoice-link">
+        <b>Invoice Image (.JPEG, .JPG, .PNG, & .BMP):</b>
+        </div>
+        <br /><br />
+        <img id="sourceImage" width="650" />
+      </div>
+    </div>
+  </body>
+  </div>
+</html>

@@ -1,0 +1,26 @@
+Industry: FinTech
+
+Project title: Build and deploy web service to extract the information from invoices or billing material using Microsoft Azure and REST API service.
+
+Problem Statement:
+1. If we consider the people who are mostly involved in administrative work in banks, stores and offices, which is located in rural areas. They have a large copy set of all invoices, transaction reports and billing material which is kept in drops of building. 
+2. Whenever customers came and they want to investigate their previous billing material so, administrators have to look at all the duplicate copies of billings of all customers and they have to look into it. Again it is more difficult when Invoice is not clear. Administrators have to invest lots of effort to look into it and find the particular information like time date, name, total etc in invoices. It is getting more difficult when the invoice is not clear.
+
+
+Project Description:
+1.The  Core Idea of the project is we can use Microsoft Azure OCR technique and Azure Static Web App Service and other Azure techniques and services to extract the information from an image like invoices or transaction reports we can also save the file in PDF files which we can use in future to solve customer queries related to transaction reports. Project take the opportunity from the current situation in finance sector basically in rural areas.
+
+2.The key feature of the project is it uses Azure Cognitive Service, Optical Character Recognition, Azure Static WebApp, Visual Studio Code, Azure text and Image analytics techniques. It will provide a web-based interface for the analysis of the billing reports.
+
+3.I'm trying to solve the problem in the financial sector basically in rural areas like banks, stores, or people running their business because those people or administrators have to manage the invoices or billing reports in a big set of copies but, what if a customer comes and they want to see specific information for particular invoice like address, date, time. Administrators have to look at all the duplicate copies of billings of all customers and they have to look into it. Again it is more difficult when Invoice is not clear. When administrators make the report they have to upload the image in that particular hosted web service which uses Microsoft Azure computer vision service in the backend. It will take up to 10 seconds to analyze and we can also save this file in pdf format for future purposes.
+
+
+Azure Technologies:
+ 1. Azure Cognitive Services
+ 2. Visual Studio Code
+ 3. Text Analytics
+Other Azure Technologies:
+ 1. Optical Character Recognition
+ 2. Azure Storage
+ 3. Azure Static WebApp Service
+ 4. WebApp
