@@ -9,7 +9,7 @@
 
 ![](Step-%201.png)
 
-# Optional Step
+# *Optional Step*
 
 **Explaination:** You can use your own *Subscription Key* and *Endpoint* from Azure webportal. For this demo I have used my owned credential.
 
@@ -25,20 +25,26 @@
 
 ![](Step-%203.png)
 
-# Technology
+# Technologies
 
-- Microsoft Azure
-- Optical Character Recognition
-- Azure Static WebApp Service 
-- Visual Studio Code
-- GitHub
-- Azure Cognitive Services
-- Azure Storage
-- Canva (To edit screenshot)
-- Text Analytics
-- Image Analysis
+1. Microsoft Azure
+2. Optical Character Recognition
+3. Azure Static WebApp Service 
+4. Visual Studio Code
+5. GitHub
+6. Azure Cognitive Services
+7. Azure Storage
+8. Canva (To Add Text in Screenshots)
+9. Text Analytics
+10.Image Analysis
 
-# Reference
-- Future Ready Talent Website (Internship Project)
+# Programming languages
+1. HTML
+2. CSS
+3. JAVASCRIPT
+
+# Learning Reference
+- Future Ready Talent Website (Internship Website)
 - Microsoft Learn and Official Documentation
 - GitHub Documentation
+- Future Skills Prime Website
