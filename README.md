@@ -5,7 +5,7 @@
 
 **Explanation:** It uses Microsoft Azure Optical Character Recognition Technique and other Microsoft Azure techniques to extract information from invoices and other billing materials to solve the customer's problems regarding billing.
 
-# **Please watch this project demo video of my project to get how this project useful for extract the information from invoices**
+# **Please watch this demo video of my project to know how this project useful for extract the information from invoices or billing materials**
 
 https://user-images.githubusercontent.com/64843655/147494308-bfbaf020-8e7c-4cbf-b93e-cceb360db011.mp4
 
@@ -55,10 +55,10 @@ https://user-images.githubusercontent.com/64843655/147494308-bfbaf020-8e7c-4cbf-
 - GitHub Documentation
 - Future Skills Prime Website
 
-**Thank You So Much Sir/Mam for Giving us this Opportunity**
-**Name:** Vaibhav Rajendra Yeole
-**Email ID:** vaibhavryeole@gmail.com
-**College Name:** Dr. D. Y. Patil Institute of Technology, Pimpri, Pune
-**Branch:**Electronics & Telecommunication Engineering
+# **Thank You So Much Sir/Mam for Giving us this Opportunity**
+- **Name:** Vaibhav Rajendra Yeole
+- **Email ID:** vaibhavryeole@gmail.com
+- **College Name:** Dr. D. Y. Patil Institute of Technology, Pimpri, Pune
+- **Branch:** Electronics & Telecommunication Engineering
 
 
