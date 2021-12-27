@@ -7,6 +7,8 @@
 
 # **Please watch this project demo video of my project to get how this project useful for extract the information from invoices**
 
+https://user-images.githubusercontent.com/64843655/147494308-bfbaf020-8e7c-4cbf-b93e-cceb360db011.mp4
+
 # Step: 1
 
 **Explaination:** Open the github project repositry name *Invoice-Extractor* and click on the project demo link [Invoice-Extractor](https://invoiceextractor2021.z29.web.core.windows.net/) it will take you on this below site.
@@ -52,3 +54,11 @@
 - Microsoft Learn and Official Documentation
 - GitHub Documentation
 - Future Skills Prime Website
+
+**Thank You So Much Sir/Mam for Giving us this Opportunity**
+**Name:** Vaibhav Rajendra Yeole
+**Email ID:** vaibhavryeole@gmail.com
+**College Name:** Dr. D. Y. Patil Institute of Technology, Pimpri, Pune
+**Branch:**Electronics & Telecommunication Engineering
+
+
