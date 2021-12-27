@@ -1,0 +1,34 @@
+.heading-1 {
+  text-align: center;
+  color: white;
+  background-color: black;
+  font-size: 40px;
+}
+.background-color{
+    background-color: rgb(135,206,250);
+}
+.subscription-key {
+    padding-left: 120px;
+    font-size: 25px;
+    color: brown;
+}
+.endpoint {
+    font-size: 25px;
+    color: brown;
+}
+.image-link {
+font-size: 25px;
+color: brown;
+}
+.JSON-file{
+    font-size:25px;
+    color: brown;
+}
+.invoice-link{
+    font-size: 25px;
+    color: brown;
+}
+.error-file{
+    color: red;
+    text-align: center;
+}
